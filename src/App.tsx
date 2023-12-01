@@ -1,3 +1,4 @@
+import Alert from './components/Alert';
 import ListGroup from './components/ListGroup';
 
 function App() {
@@ -9,8 +10,15 @@ function App() {
     'İzmir'
   ];
 
+  const handleSelectItem = (item: string) => {
+    console.log(item);
+  }
+
   return <div>
-    <ListGroup items={items} heading='Cities'></ListGroup>
+    <Alert>
+      Long messageasdasd<b>asd</b>
+    </Alert>
+    <ListGroup items={items} heading='Cities' onSelectItem={handleSelectItem}></ListGroup>
   </div>
 }
 

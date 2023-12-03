@@ -1,4 +1,5 @@
 import Alert from './components/Alert';
+import Button from './components/Button';
 import ListGroup from './components/ListGroup';
 
 function App() {
@@ -18,6 +19,14 @@ function App() {
     <Alert>
       Long messageasdasd<b>asd</b>
     </Alert>
+    <br />
+    <br />
+    <Button text='Kaydet1' />
+    <Button text='Kaydet2' />
+    <Button text='aasdasd' />
+
+    <br />
+    <br />
     <ListGroup items={items} heading='Cities' onSelectItem={handleSelectItem}></ListGroup>
   </div>
 }
